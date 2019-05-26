@@ -1,0 +1,245 @@
+
+/* Typography */
+
+body{
+font-family: 'Montserrat', sans-serif;
+font-size: 13px;
+}
+
+p,h1,h2,h3,h4,h5,h6{
+	margin: 0;
+}
+
+*{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+/* Layout */
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	color: #727f82;
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../img/bg.jpg);
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-color: #000;
+	margin: 0;
+	}
+
+
+
+.ba-container{
+	width: 336px;
+	height: 532px;
+	background-color: #FFF;
+	margin: auto;
+	margin-top: 100px;
+}
+
+
+.ba-header{
+	height: 72px;
+	background-color: #F8EDAF;
+	display: flex;
+	position: relative;
+}
+
+.ba-header__info{
+	margin: 24px;
+}
+
+.ba-header__title{
+	font-size: 15px;
+	line-height: 18px;
+}
+
+.ba-header__text{
+	font-size: 10px;
+	font-weight: 400;
+	text-transform: uppercase;
+	
+}
+
+.ba-header__price{
+	font-size: 36px;
+	text-align: right;
+	margin: 18px 24px;
+	position: absolute;
+	right: 0;
+
+}
+
+
+/* Form */
+
+
+.ba-fields>*{
+	margin-top: 20px;
+}
+
+.ba-fields{
+	margin-bottom: 30px;
+}
+
+.ba-form__cvv{
+	display: flex;
+}
+
+
+.ba-form-action{
+	margin-top: 30px;
+}
+
+.ba-form{
+	margin: 24px;
+}
+
+input, select{
+	height: 44px;
+	border: solid 2px #BAC8CB;
+	padding: 10px;
+}
+
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+input[type="number"] {
+-moz-appearance: textfield;
+} /*убирает стрелочки которые появляются при наведении*/
+
+
+
+select{
+	-webkit-appearance: none;
+	-webkit-border-radius: none;
+	border-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 10px;
+}
+
+
+.ba-form__card-label, .ba-form__date-label, .ba-form__cvv-label{
+	margin-bottom: 10px;
+}
+
+.ba-form__card-input{
+	width: 100%;
+}
+
+.ba-form__date{
+	min-width: 100%;
+}
+
+.ba-form__date-label{
+	width: 100%;
+}
+
+.ba-form__date-month{
+	width: 69%;
+	margin: 0;
+	overflow: hidden;
+	display: inline;
+    position: relative;
+}
+
+
+.ba-form__select{
+	overflow: hidden;
+	display: inline;
+    position: relative;
+}
+
+.ba-form__select:after {
+  content: "▼";
+  padding: 3px 2px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+  width: 10%;
+  height: 100%;
+  pointer-events: none;
+}
+
+
+
+
+.ba-form__date-year{
+	width: 29%;
+	margin: 0;
+}
+
+.ba-form__cvv-wrapper{
+	width: 100%;
+	display: flex;
+}
+
+.ba-form__cvv{
+	display: inline-block;
+	width: 30%;
+}
+
+.ba-form__cvv-input{
+	width: 100%;
+}
+
+.ba-form__cvv-text{
+	margin-left: 20px;
+	margin-right: 2px;
+}
+
+.ba-form__cvv-text, .ba-form__cvv-link{
+	margin-top: 38px;
+}
+
+
+
+
+hr{
+	color: #EDF0F1;
+	height: 1px;
+	opacity: 0.5;
+}
+
+
+
+/*Buttons*/
+
+
+.ba-btn{
+	height: 44px;
+	width: 100%;
+	border: none;
+}
+
+.ba-form__button-primary{
+	background-color: #25B86A;
+	font-size: 20px;
+	color: #fff;
+	font-weight: 700;
+}
+
+.ba-form__button-secondary{
+	color: #9eabad;
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+

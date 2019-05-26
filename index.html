@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Payment form</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="img/favicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<main class="ba-container">
+		<section class="ba-header">
+			<div class="ba-header__info">
+				<h3 class="ba-header__title">Harold Finch</h3>
+				<h6 class="ba-header__text">Your Total</h6>
+			</div>
+			<h1 class="ba-header__price">$88</h1>
+		</section>
+
+		<form class="ba-form" action="form.php" method="">
+			<fieldset class="ba-fields">
+				
+				<div>
+					<label class="ba-form__card">
+						<p class="ba-form__card-label">Credit card number</p>
+						<input class="ba-form__card-input" type="number" name="Credit card number" required>
+					</label>
+				</div>
+				
+				<div>
+					<label class="ba-form__date">
+						<p class="ba-form__date-label">Expiration date </p>
+						<div class="ba-form__select">
+						 	<select class="ba-form__date-month"name="Expiration date"> 
+								<option value="" selected>Month</option>
+								<option value="1">January</option>
+								<option value="2">February</option>
+								<option value="3">March</option>
+								<option value="4">April</option>
+								<option value="5">May</option>
+							</select>
+						</div>
+						<div class="ba-form__select">
+							<select class="ba-form__date-year"name="Year"> 
+								<option value="Year">Year</option>
+								<option value="1">2019</option>
+								<option value="2">2020</option>
+								<option value="3">2021</option>
+							</select>
+						</div>
+					</label>
+				</div>
+
+				<div class="ba-form__cvv-wrapper">
+					<label class="ba-form__cvv">
+						<p class="ba-form__cvv-label">CVV</p>
+						<input class="ba-form__cvv-input" type="password" name="CVV" required>
+					</label>
+					<p class="ba-form__cvv-text">3 or 4 digits - </p>
+					<a class="ba-form__cvv-link" href="">view example</a>
+				</div>
+			</fieldset>
+
+			<hr>
+
+
+			<fieldset class="ba-form-action">
+				<input class="ba-btn ba-form__button-primary" type="submit" name="submit" value="Pay">
+				<button class="ba-btn ba-form__button-secondary">Cancel order</button>
+			</fieldset>
+		</form>
+
+	</main>
+	
+</body>
+</html>
